@@ -1,1 +1,113 @@
-/* add styles here */
+html {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 300;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Book.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-Heavy.ttf);
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  transition:
+    box-shadow 0.2s ease-in-out,
+    background 0.2s ease-in-out;
+  background: #fff;
+  width: 100%;
+  cursor: text;
+  color: rgba(61, 78, 97, 1);
+  box-sizing: border-box;
+  margin: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.search-field--big {
+  padding: 25px 26px 26px;
+  margin-top: 20px;
+}
+
+.search-field--small {
+  padding: 13px 14px 14px;
+  margin-top: 20px;
+}
+
+.search-field__img {
+  background-image: url('./images/Search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+.search-field--big .search-field__img {
+  width: 19px;
+  height: 19px;
+  margin-right: 17px;
+}
+
+.search-field--small .search-field__img {
+  width: 11px;
+  height: 11px;
+  margin-right: 9px;
+}
+
+.search-field__input {
+  border: 0;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(61, 78, 97, 1);
+  background: transparent !important;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none !important;
+}
+
+.search-field__input--small {
+  font-size: 14px;
+}
+
+.search-field:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-field:focus-within {
+  background: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.search-field__input:focus {
+  font-weight: 400;
+}
