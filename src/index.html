@@ -13,31 +13,30 @@
     />
   </head>
   <body>
-    <div class="container">
-      <form
-        class="search-field search-field--big"
-        data-qa="big"
-      >
-        <div class="search-field__img"></div>
+    <form
+      class="search search--big"
+      data-qa="big"
+    >
+      <label class="search__label">
         <input
-          type="text"
-          data-qa="keypress"
-          placeholder="Try “Los Angeles“"
-          class="search-field__input"
-        />
-      </form>
-
-      <form
-        class="search-field search-field--small"
-        data-qa="small"
-      >
-        <div class="search-field__img"></div>
-        <input
+          class="search__input search__input--big"
           type="text"
           placeholder="Try &#34;Los Angeles&#34;"
-          class="search-field__input search-field__input--small"
+          data-qa="keypress"
         />
-      </form>
-    </div>
+      </label>
+    </form>
+    <form
+      class="search search--small"
+      data-qa="small"
+    >
+      <label class="search__label">
+        <input
+          class="search__input search__input--small"
+          type="text"
+          placeholder="Try &#34;Los Angeles&#34;"
+        />
+      </label>
+    </form>
   </body>
 </html>
